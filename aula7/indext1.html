@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+         font: 12pt arial;
+     }
+     button{
+         font-size: 12pt;
+         padding: 30px;
+     }
+    
+    </style>
+</head>
+<body>
+    
+ <h1>Media do Aluno</h1>
+ <button onclick="media()">Calcular média </button>
+ <section id="situacao">
+     <p>o resultado que vai aparecer</p>
+
+ </section>
+<script>
+   function media(){
+       let nom = window.prompt('qual e o nome do aluno desgracado que nao sabe fazer uma conta de somar?')
+       let n1 = Number(window.prompt(`qual foi a primeira nota de ${nom}?`))
+       let n2 = Number(window.prompt(`alem de ${n1}, qual foi a outra nota de ${nom}?`))
+       med = (n1 + n2)/2 * (25 +4 * (50 - 25))/7
+
+       let msg
+       if (med >= 6){
+           msg = 'meus parabens!'
+       } else if (med > 8) {
+           msg = 'cara porque vc estuda nessa escola? vai pra outro lugar'
+       }else {
+           msg = 'estude mais um pouco rapaz, um dia você consegue, estarei torcendo que não HAHAHAHA'
+       }
+
+       let res = document.getElementById('situacao')
+       res.innerHTML = ` <p> calculando a média final de <mark>${nom}</mark>.</p>`
+       res.innerHTML += `<p> as notas obtidas foram <mark>${med}</mark>.</p>`
+       res.innerHTML += `<p> a media final sera <mark>${med}</mark>.</p>`
+       res.innerHTML += `<p> a mensagem que temos e: <strong style='color:red'>${msg}</strong>`
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

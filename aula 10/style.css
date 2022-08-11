@@ -1,0 +1,18 @@
+body{
+   
+    
+}
+
+
+div{
+    background: rgb(0, 0, 0);
+}
+*{
+    opacity: 0.1;
+}
+.dois{
+    opacity: 0.3;
+}
+.tres{
+    opacity: 10;
+}

@@ -1,0 +1,17 @@
+header{
+    border-radius: 2px;
+    background: tomato;
+}
+
+main{
+    border-radius: 2px;
+    background: rgb(162, 36, 13);
+}
+section{
+    border-radius: 2px;
+    background: gray;
+}
+footer{
+    border-radius: 2px;
+    background: rgb(162, 24, 0);
+}

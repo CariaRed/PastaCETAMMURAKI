@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Document</title>
+<style>
+ #area {
+     font: normal 20pt arial;
+     background: green;
+     color: white;
+     width: 500px;
+     height: 500px;
+     line-height: 950px;
+     text-align: right;
+     display: inline-block;
+
+ }
+
+ #eaqui {
+    font: normal 20pt arial;
+    background: rgb(26, 41, 92);
+    color: rgb(179, 42, 42);
+    width: 500px;
+    height: 500px;
+    line-height: 950px;
+    text-align: left;
+    display: inline-block;
+}
+
+#salve {
+    font: normal 20pt arial;
+    background:rgb(29, 95, 45);
+    color: black;
+    width: 500px;
+    height: 500px;
+    line-height: 35px;
+    text-align: right;
+    display: inline-block;
+}
+#truta {
+    font: normal 20pt arial;
+    background:rgb(175, 108, 20);
+    color: rgb(24, 165, 221);
+    width: 500px;
+    height: 500px;
+    line-height: 35px;
+    text-align: left;
+    display: inline-block;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div id="area" gerar_cor="clicar" gerar_cor="entrar" gerar_cor="sair" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    Interaja
+ </div>
+ <div id="eaqui" onclick="cliquei()" onmouseenter="entrei()" onmouseout="mudei()">
+    <b>Interaja</b>
+ </div>
+ <div id="salve" onclick="clicarei()" onmouseenter="entrarei()" onmouseout="mudarei()">
+    <b>lacoste</b>
+ </div>
+ <div id="truta" onclick="clicai_vos()" onmouseenter="entrai_vos()" onmouseout="mudai_vos()"   >
+    <b>Incrível</b>
+ </div>
+<script>
+    
+ const a = window.document.getElementById('area');
+ 
+ const b = window.document.getElementById('eaqui');
+
+ const c = window.document.getElementById('salve');
+
+ const d = window.document.getElementById('truta');
+// 1
+function clicar(){
+   
+    a.innerText = 'clicou'
+    a.style.background = 'red'
+    
+    function gerar_cor(opacidade = 1) {
+       let r= Math.random() * 255;
+       let g = Math.random() * 255;
+       let b = Math.random() * 255;
+       
+       return `rgba(${r}, ${g}, ${b}, ${opacidade})`;
+    }
+}
+function entrar(){
+   
+   
+   a.innerText = 'abandonou'
+   a.style.background = 'blue'
+}
+function sair(){
+   
+   a.innerText = 'interajiu'
+   a.style.background = 'grey'
+}
+// 2
+function cliquei(){
+   
+ b.innetText = 'clica ai'
+ b.style.background = 'white'
+}
+
+function entrei(){
+ b.innetText = 'passo logo estou vivo'
+ b.style.background = 'yellow'
+}
+
+function mudei(){
+ b.innetText = 'sai eita'
+ b.style.background = 'blue'
+}
+// 3
+function clicarei(){
+ c.innetText = 'logo existirei'
+ c.style.background = 'blue'
+}
+
+function entrarei(){
+ c.innetText = 'passo logo estou vivo'
+ c.style.background = 'red'
+}
+
+function mudarei(){
+ c.innetText = 'para melhor'
+ c.style.background = 'yellow'
+}
+// 4
+function clicai_vos(){
+   d.innetText = 'ola'
+   d.style.background = 'blue'
+}
+function entrai_vos(){
+   d.innetText = 'é isso'
+   d.style.background = 'yellow'
+}
+function mudai_vos(){
+   d.innetText = 'hm'
+   d.style.background = 'red'
+}
+</script>
+</body>
+</html>

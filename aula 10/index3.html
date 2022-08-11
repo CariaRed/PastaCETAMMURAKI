@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Basico</title>
+     <style>
+         #tra {
+
+         }
+
+         #igu{
+             
+         }
+
+         #cor{
+
+         }
+         #bio{
+             width: 100px;
+         }
+     </style>
+</head>
+<body>
+    <form>
+        <h2 id="tra">Formulário</h2>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            Nome: <input type="text" name="nome"><br>
+            Endereço: <input type="text" name="endereco"><br>
+            Cidade:<input type="text" name="cidade"><br>
+
+            Estado:<select>
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="SP">São Paulo</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <h3>Natureza do Cargo</h3>
+            <input type="radio" name="cargo" id="cor">Gerência
+            <input type="radio" name="cargo" id="cor">Financeiro
+            <input type="radio" name="cargo" id="cor">Recepção
+            <input type="radio" name="cargo" id="cor">Administrativo
+            <input type="radio" name="cargo" id="cor">Juridico
+            <br>
+            <h4 id="igu">Área de interesse</h4>
+            <input type="checkbox" name="interesse" id="car">Computação<object data="computação.png" type="img"></object><br><br>
+            <input type="checkbox" name="interesse" id="car">Biologia<object data="Biologia.png" id="bio"></object>
+            <input type="checkbox" name="interesse" id="car">Meio Ambiente <object data=""></object>
+            
+
+
+
+
+
+        </fieldset>
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

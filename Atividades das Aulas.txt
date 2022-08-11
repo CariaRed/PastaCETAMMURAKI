@@ -1,0 +1,38 @@
+
+Aula 3  //Let apaga o const mantém.
+
+
+let varA = 'A' // B
+let varB = 'B' // C
+let varC = 'C' // A
+
+const varATemp = varA
+varA = varB; // B
+varB = varC; // C
+varC = varATemp; // B
+//---> Fazer aparecer os valores varA varB e varC alternados, varA aparecendo B, varB aparecendo C e varC aparecendo A
+
+console.log(varA, varB, varC)
+
+//=====>varAtemp como constante pra que nunca mude, sempre apareça A.
+
+================================================================================================================================================
+
+Aula 3
+
+let num1 =  ('Digite um numero');
+let num2 = ('Digite outro numero');
+num1 = Number(num1)
+num2 = Number(num2)
+const resultado2 = num1 + num2
+
+alert('O resultado da conta foi: ' resultado2)
+
+//---> Number transforma o texto em numero fazendo possível a soma do num1 e num2
+=======================================================
+let umaString = "umtexto"
+console.log(`e um texto ${umaString}`)
+('e um texto',umaString)
+(umaString + '  muito lindo')
+(`${umastring} muito lindo`)
+(umaString.concat('muito lindo'))

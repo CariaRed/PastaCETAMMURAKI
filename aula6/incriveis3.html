@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>O teu pai
+    
+</title>
+
+<style>
+
+body{
+    font: 12pt arial;
+}
+
+button{
+    font-size: 12pt;
+    padding: 30px;
+}
+
+</style>
+</head>
+<body>
+
+    <h1>trabalho com Dados de alta performance</h1>
+    <button onclick="inicio()">Clique para começar </button>
+    <section id="resultado" >
+        <p>aqui vai aparecer resultado</p>
+    </section>
+
+    <script>
+
+ function inicio(){
+      let nome = window.prompt('Qual seu nome?')
+      let res = window.document.getElementById('resultado')
+      res.innerHTML = `<p>Ola, <strong>${nome}</strong>! Voce tem calvisse boy &#x1F596`
+
+ }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+ 
+ body {
+     background-color: aqua;
+ }
+
+
+    </style>
+</head>
+<body>
+    <h1>Coloque os anos subsequentes</h1>
+    <section>
+        
+        Coloque sua data de nascimento: <input type="number" name="ano" id="tnt2"> <br><br>
+        Coloque a data de ano atual: <input type="number" name="ano2" id="tnt3"> <br> <br>
+        <input type="button" value="receber" onclick="enviar()"><br> <br>
+        
+        
+        <div id="res2"></div>
+
+    </section>
+    <script>
+
+ function enviar(){
+     let irrra = document.getElementById('tnt2')
+     let irrre = document.getElementById('tnt3')
+     if(irrra.value.length == 0 || irrre.value.length == 0){
+     alert("Insira corretamente os dados")
+     } else if (irrra.value > irrre.value){
+         alert('A data no nascimento não está coerente com a data do ano corrija')
+     } else { 
+        let irra = Number(tnt2.value)
+        let irre = Number(tnt3.value)
+        let res3 = document.querySelector('div#res2')
+        let s = irre - irra
+        res3.innerHTML = `Você nasceu em ${irra} e tem ${s} anos`
+       
+     }
+     
+ }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

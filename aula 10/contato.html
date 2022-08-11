@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <p>Entre em contato pelo facebook
+    </p>
+    <a href="index.html">INICIO</a>
+    <a href="https://www.facebook.com/profile.php?id=100008529812267">Facebook</a>
+    <a href="index2.html"> SOBRE NOS</a>
+    <h1><i>Formulario</i></h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+ <form action="recebeDados.php" method="post">
+    
+   <label for="nome" form="idade" form="profissao"></label>
+   <input type="text" name="nome" id="nome" placeholder="Nome completo" value="" required> <br> <br>
+   <input type="number" name="idade" id="idade" placeholder="Idade" required> <br> <br>
+   <input type="text" name="profissao" id="profissao" placeholder="Cargo/Ocupação" required> <br> <br>
+   <label for="email"><input type="email" name="email" id="email required" placeholder="Email" required></label><br><br>
+   <label form="Estado civíl"><input type="text" name="Estado civíl" id="Estado civíl" placeholder="Estado civíl atual" required></label>
+   <label for="phone"></label><br><br>
+   <input type="number" name="phone" id="phone" placeholder="(92) 99999-9999" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" min="" max="11"><br><br> 
+   <label for="hora">Hora do envio</label>
+   <input type="time" name="hora" id="hora" required> <br> <br>
+   <label id="data">Data de nascimento:</label>
+   <input type="date" name="data" id="data" required><br><br>
+   <label for="cor">Cor</label>
+   <input type="color">
+   <label for="peso">Peso</label>
+   0<input type="range" name="peso" id="peso" min="0" max="200" onclick="peso()" > 200
+
+    <p><STRONG>Sexo</STRONG></p>
+    <input type="radio" name="sexo" id="sexo">
+    <label for="sexo">Masculino</label>
+
+    <input type="radio" name="sexo" id="sexo">
+    <label for="sexo">Feminino</label>
+    <br><br>
+
+    <label for="estado">Estado</label>
+    <select name="estado" id="estado">
+        <option value="SP">SAO PAULO</option>
+        <option value="AM">AMAZONAS</option>
+        <option value="RJ">RIO DE JANEIRO</option>
+        <option value="PA">PARA</option>
+
+    </select>
+      <br><br>
+
+      <label for="msg">Mensagem</label>
+      <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+    
+        
+    
+   
+ </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Enviar">
+
+
+
+
+ 
+ </form>
+
+
+
+
+
+
+
+
+    
+
+
+    <script>
+   function peso(){
+       
+   }
+
+
+
+
+
+    
+    </script>
+</body>
+</html>
